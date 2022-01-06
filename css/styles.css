@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+.image {
+  display: block;
+}
+
 h1, h2, h3, p {
   margin: 0;
 }
@@ -59,7 +63,9 @@ h1, h2, h3, p {
 .logo-white {
   color: var(--white-color);
 }
+
 /* site-naw */
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -93,6 +99,7 @@ h1, h2, h3, p {
 .site-nav-list .link:focus {
   color: var(--accent-color);
 }
+
 /* auth-naw-link */
 
 .auth-nav-list {
@@ -122,9 +129,13 @@ h1, h2, h3, p {
 
 .hero {
   background-color: var(--hero-background-color);
-  text-align: center;
+  text-align: center; 
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
+  
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--white-color);
@@ -193,12 +204,14 @@ display: flex;
 .work-list .item + .item {
   margin-left: 30px;
 }
-.image {
-  display: block;
 
-}
 
 /* team */
+
+.section.team {
+background-color: var(--secondary-background-color);
+}
+
 .team-list {
   display: flex;
   
@@ -264,6 +277,12 @@ margin-top: 9px;
 
 
 /* Portfolio */
+
+.prtfolio-title {
+  text-align: center;
+}
+
+
 .filter-list {
   display: flex;
   justify-content: center;
@@ -319,4 +338,5 @@ margin-top: 9px;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
+  outline: 1px solid #eeeeee;
 }
